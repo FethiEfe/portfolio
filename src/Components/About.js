@@ -2,6 +2,7 @@ import React from 'react';
 import portfolio from "../Images/portfolio.jpg"
 import github from "../Images/github.png"
 import linkedin from "../Images/linkedin.png"
+import email from "../Images/email.png"
 
 function About() {
   return (
@@ -13,8 +14,10 @@ function About() {
       <div className = "about-right">
         <img className = "portfolio-pic" src={portfolio} />
         <div className="contact-icons" >
-          <img className = "github-pic" src = {github} />
-          <img className = "linkedin-pic" src = {linkedin} />
+          <a href ="https://www.linkedin.com/in/fethi-efe-akcay/" target = "_blank"><img className = "github-pic" src = {github} /></a>
+          <a href = "https://github.com/FethiEfe" target = "_blank" ><img className = "linkedin-pic" src = {linkedin} /></a>
+          <a href = "mailto:f.akcay1@gmail.com" ><img className = "email-pic" src = {email} /></a>
+          
         </div>
       </div>
       
