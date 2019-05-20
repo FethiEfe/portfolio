@@ -301,12 +301,14 @@
 
 
 .project-but a{
-    background-color:orange;
+   
     width: 8vw;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 5px;
     font-size: 1.5em;
-    color:white;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
     
 
     
