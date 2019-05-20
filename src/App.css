@@ -1,11 +1,23 @@
 /* /////////////////// NAVBAR BELOW //////////////////*/
-.navbar{
+.navbar-unscrolled{
     position:fixed;
     width: 100%;
+    height: 10vh;
+    list-style: none;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    align-items: center;
+    color:white;
+
 }
 
-.navbar{
-    
+.navbar-scrolled{
+    background-color: white;
+    position:fixed;
+    width: 100%;
+    height: 10vh;
     list-style: none;
     display: flex;
 	flex-direction: row;
@@ -14,21 +26,35 @@
 	align-items: center;
 
 }
-.navbar .navbar-name{
+
+.navbar-unscrolled .navbar-name{
    color: white;
    margin-left: 5vw;
    font-family: cursive;
    cursor: pointer;
 }
+.navbar-scrolled .navbar-name{
+    color: black;
+    margin-left: 5vw;
+    font-family: cursive;
+    cursor: pointer;
+ }
 
-.navbar .navbar-session{
+.navbar-session{
     
     margin-right: 5vw;
     
- }
+}
 
-.navbar a{
+ .navbar-unscrolled a{
     color:white;
+    font-size: 2em;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+.navbar-scrolled a{
+    color:black;
     font-size: 2em;
     margin-left: 2vw;
     cursor: pointer;
@@ -38,6 +64,7 @@
     border-bottom: 1px solid orange;
     color:orange
 }
+
 
 /* /////////////////// NAVBAR ABOW //////////////////*/
 
@@ -57,16 +84,19 @@
 } 
 
 .intro{
+    /* border: 2px solid rgb(242, 70, 22); */
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
-	align-items: center; 
+    align-items: center; 
+    margin-top: 5vh;
 }
 .intro h1{
    color:white;
    font-size: 3em;
    letter-spacing: 0.1em;
+   text-shadow: 2px 2px black;
     
 }
 .intro div {
@@ -80,6 +110,7 @@
     font-size: 2em;
     font-weight: 500;
     letter-spacing: 0.1em;
+    text-shadow: 2px 2px black;
     
 }
 
@@ -89,6 +120,7 @@
 }
 
 .skills-row{
+    /* border: 1px solid white; */
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -98,9 +130,9 @@
 }
 
 .image-div{
-    /* background-color: rgba(255, 255, 255, 0.253); */
+ 
     width: 13vw;
-    height: 16vh;
+   
     /* border: 1px solid red; */
     display: flex;
 	flex-direction: column;
@@ -109,19 +141,20 @@
 	align-items: center;
 }
 .image-div img{
-    /* width: 7vw;
-    height: 10vh; */
+    /* border: 1px solid black; */
     width: 110px;
     height: 100px;
+    
    }
 
 .logo-text{
+    /* border: 1px solid blue; */
     text-align: center;
     color: #ffffff;
     font-family: Raleway, Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: 0.1em;
-    /* margin: 0 0 1em 0; */
+    
     text-transform: uppercase;
 
 }
@@ -136,7 +169,7 @@
     font-size: 1em;
     font-weight: 800;
     letter-spacing: 0.1em;
-    margin-top:2vh;
+    margin-bottom: 0;
     cursor: pointer;
     
 }
@@ -214,8 +247,79 @@
 /* /////////////////// Project.js ABOVE //////////////////*/
 .projects-section{
     height: 100vh;
-    background-color: hotpink;
+    background-color: whitesmoke;
+    /* border: 1px solid black; */
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 }
+
+.Projects-Card{
+    border: 1px solid gray;
+    box-shadow: 5px 10px 8px #888888;
+    width: 30vw;
+    /* height: 60vh; */
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    
+}
+
+.exp-parag{
+    /* border: 1px solid red; */
+    width: 28vw;
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+}
+
+.project-but{
+   
+	width: 28vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: center; 
+    color:white;
+    margin-bottom: 1.5vh;
+    cursor: pointer;
+    
+}
+
+    
+
+
+
+.project-but a{
+    background-color:orange;
+    width: 8vw;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.5em;
+    color:white;
+    
+
+    
+    
+}
+#Carousel img {
+    /* border: 1px solid blue; */
+    width: 40vw;
+    height: 40vh; 
+}
+
+
+
 /* /////////////////// Project.js ABOVE //////////////////*/
 
 

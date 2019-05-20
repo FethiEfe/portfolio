@@ -57,18 +57,18 @@ function Home() {
           </div>
           <div className="image-div" >
             <img src={postgresql} />
-            <h2 className="logo-text">POSTGRESQL</h2>
+            <h2 className="logo-text">POSTGRES</h2>
           </div>
 
         </div>
       </div>
-      <Link to="about"
+      {/* <Link to="about"
             spy={true}
             smooth={true}
             offset={0}
             duration={500}>
         <button className="home-button">FIND OUT MORE</button>
-      </Link>
+      </Link> */}
 
     </div>
   );

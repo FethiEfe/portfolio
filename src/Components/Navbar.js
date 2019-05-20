@@ -2,13 +2,35 @@ import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 class Navbar extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            isTop: true,
+        }
+    }
+
+    componentDidMount() {
+        document.addEventListener('scroll', () => {
+          const isTop = window.scrollY < 100;
+          if (isTop !== this.state.isTop) {
+            this.onScroll(isTop);
+          }
+        });
+    }
+    
+    onScroll = (isTop) => {
+        this.setState({ isTop });
+     }
+
     scrollToTop = () => {
         scroll.scrollToTop();
     };
+
+    
     render(){
         
     return (
-        <div className="navbar">
+        <div className = {"navbar-" + (this.state.isTop ? "unscrolled" : "scrolled")} >
             <h2 className="navbar-name"
                 onClick = {this.scrollToTop}>FETHI AKCAY</h2>
             <div className="navbar-session ">
@@ -48,7 +70,7 @@ class Navbar extends React.Component {
 
 
         </div>
-    );
+     );
     }
 }
 
