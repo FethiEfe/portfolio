@@ -60,18 +60,21 @@ class Contact extends React.Component {
             </div>
 
             <div className="contact-linkedin-icon">
-              <img src={linkedin} />
-              <a href="https://www.linkedin.com/in/fethi-efe-akcay/" target="_blank">https://www.linkedin.com/in/fethi-efe-akcay/</a>
+              
+              <a href="https://www.linkedin.com/in/fethi-efe-akcay/" target="_blank"><img src={linkedin} /></a>
+              <a id = "linkedin-text" href="https://www.linkedin.com/in/fethi-efe-akcay/" target="_blank">https://www.linkedin.com/in/fethi-efe-akcay/</a>
             </div>
 
             <div className="contact-email-icon">
-              <img src={email} />
-              <a href="mailto:f.akcay1@gmail.com">f.akcay1@gmail.com</a>
+              
+              <a href="mailto:f.akcay1@gmail.com"><img src={email} /></a>
+              <a id = "email-text" href="mailto:f.akcay1@gmail.com">f.akcay1@gmail.com</a>
             </div>
 
             <div className="contact-github-icon">
-              <img src={github} />
-              <a href="https://github.com/FethiEfe" target="_blank">https://github.com/FethiEfe</a>
+              
+              <a href="https://github.com/FethiEfe" target="_blank"><img src={github} /></a>
+              <a id = "github-text"href="https://github.com/FethiEfe" target="_blank">https://github.com/FethiEfe</a>
             </div>
 
 
