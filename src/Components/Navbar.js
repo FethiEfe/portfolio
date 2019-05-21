@@ -42,6 +42,7 @@ class Navbar extends React.Component {
                     onClick={this.scrollToTop}>FETHI AKCAY</h2>
                 <label for="toggle" className="hamburger-icon">Menu &#9776;</label>
                 <input type="checkbox" id="toggle" />
+              
                 <div className="navbar-session ">
 
 

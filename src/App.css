@@ -164,7 +164,8 @@
 
     .navbar-session > .active {
         border-bottom: 1px solid orange;
-        color:orange
+        color:orange;
+        
     }
 
     #toggle{
@@ -651,73 +652,209 @@
 /* /////////////////// Home.js ABOVE //////////////////*/
 
 /* /////////////////// About.js BELOW //////////////////*/
+@media screen and (max-width: 450px){
+    .about-session{
+        height: 100vh;
+        background-color: #f4623a;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-left{
+        width: 70vw;
+        height: 50vh;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .ABOUT_ME{
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        font-weight: 800;
+        color: white;
+        border-bottom: 1px solid white;
+        padding-bottom: 1vh;
+        text-align: center;
+        width: 70vw;
+    }
+    .about-me-p{
+        color: white;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        font-size: 0.5em;
+        width: 70vw;
+    }
+    .portfolio-pic{
+        width: 130px;
+        height: 120px;
+        border-radius: 50%; 
+        border: 3px solid white; 
+    }
+    
+    .contact-icons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 2vh;
+    }
+    .github-pic{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .linkedin-pic{
+        width: 40px;
+        height: 40px;
+    }
+    .email-pic{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+}
 
-.about-session{
-    height: 100vh;
-    background-color: #f4623a;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+@media screen and (min-width: 451px) and (max-width: 1024px){
+    .about-session{
+        height: 100vh;
+        background-color: #f4623a;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-left{
+        width: 50vw;
+        height: 50vh;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .ABOUT_ME{
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        font-weight: 800;
+        color: white;
+        border-bottom: 1px solid white;
+        padding-bottom: 1vh;
+    }
+    .about-me-p{
+        color: white;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        font-size: 1em;
+    }
+    .portfolio-pic{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; 
+        border: 3px solid white; 
+    }
+    
+    .contact-icons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 2vh;
+    }
+    .github-pic{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .linkedin-pic{
+        width: 40px;
+        height: 40px;
+    }
+    .email-pic{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    
 }
-.about-left{
-    width: 70vw;
-    height: 50vh;
-    margin-right: 5vw;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-}
+@media screen and (min-width: 1025px) {
+    .about-session{
+        height: 100vh;
+        background-color: #f4623a;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-left{
+        width: 50vw;
+        height: 50vh;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .ABOUT_ME{
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        font-weight: 800;
+        color: white;
+        border-bottom: 1px solid white;
+        padding-bottom: 1vh;
+    }
+    .about-me-p{
+        color: white;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        font-size: 1em;
+    }
+    .portfolio-pic{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; 
+        border: 3px solid white; 
+    }
+    
+    .contact-icons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 2vh;
+    }
+    .github-pic{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .linkedin-pic{
+        width: 40px;
+        height: 40px;
+    }
+    .email-pic{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    
+} 
 
-.ABOUT_ME{
-    font-size: 2em;
-    letter-spacing: 0.1em;
-    font-weight: 800;
-    color: white;
-    border-bottom: 1px solid white;
-    padding-bottom: 1vh;
-    text-align: center;
-    width: 70vw;
-}
-.about-me-p{
-    color: white;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    font-size: 0.5em;
-    width: 70vw;
-}
-.portfolio-pic{
-    width: 130px;
-    height: 120px;
-    border-radius: 50%; 
-    border: 3px solid white; 
-}
-
-.contact-icons{
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	margin-top: 2vh;
-}
-.github-pic{
-    width: 40px;
-    height: 40px;
-}
-
-.linkedin-pic{
-    width: 40px;
-    height: 40px;
-}
-.email-pic{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
 /* /////////////////// About.js ABOVE //////////////////*/
 
 
@@ -1058,7 +1195,7 @@
         border: 2px solid rgb(57, 57, 59);
         background-color:rgba(211, 209, 209, 0.486);
         color: black;
-        font-size: 1em;
+        font-size: 0.5em;
     
     }
     .email-form textarea{
@@ -1068,7 +1205,7 @@
         border: 2px solid rgb(57, 57, 59);
         background-color:rgba(211, 209, 209, 0.486);
         color: black;
-        font-size: 1.5em;
+        font-size: 0.5em;
     }
     
     .email-form label{
@@ -1090,7 +1227,7 @@
         width: 30vw;
         height: 5vh;
         color:white;
-        font-size: 0.2em;
+        font-size: 0.5em;
         font-weight: 700;
         letter-spacing: 0.1em;
         cursor: pointer;
