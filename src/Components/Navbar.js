@@ -6,16 +6,12 @@ class Navbar extends React.Component {
         super();
         this.state = {
             isTop: true,
-            clicked: false
+            dropDownMenuStatus: ""
 
         }
     }
 
-    handleClick = () => {
-        this.setState({
-            clicked: !this.state.clicked
-        })
-    }
+    
     componentDidMount() {
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY < 100;
@@ -23,8 +19,10 @@ class Navbar extends React.Component {
                 this.onScroll(isTop);
             }
         });
+        
     }
 
+   
     onScroll = (isTop) => {
         this.setState({ isTop });
     }
@@ -33,16 +31,33 @@ class Navbar extends React.Component {
         scroll.scrollToTop();
     };
 
+   
 
+    showDropdownMenu =(event) => {
+        event.preventDefault();
+        this.setState({dropDownMenuStatus: "drop-down-menu-open"}, () => {
+        document.addEventListener('click', this.hideDropdownMenu);
+        });
+    }
+    
+    
+
+    hideDropdownMenu = () => {
+        this.setState({ dropDownMenuStatus: 'drop-down-menu-closed' }, () => {
+          document.removeEventListener('click', this.hideDropdownMenu);
+        });
+    
+     }
+    
+  
+    
     render() {
-
         return (
             <div className={"navbar-" + (this.state.isTop ? "unscrolled" : "scrolled")} >
                 <h2 className="navbar-name"
                     onClick={this.scrollToTop}>FETHI AKCAY</h2>
-                <label for="toggle" className="hamburger-icon">Menu &#9776;</label>
-                <input type="checkbox" id="toggle" />
-              
+                <button  onClick={this.showDropdownMenu} className={this.state.dropDownMenuStatus} id ="hamburger-icon">Menu &#9776;</button>
+               
                 <div className="navbar-session ">
 
 

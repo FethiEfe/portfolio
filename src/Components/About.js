@@ -9,7 +9,7 @@ function About() {
     <div className="about-session" id = "about">
       <div className = "about-left">
         <p className = "ABOUT_ME">ABOUT ME</p>
-        <p className = "about-me-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Felis imperdiet proin fermentum leo vel orci porta non. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Maecenas pharetra convallis posuere morbi leo urna molestie. Sed adipiscing diam donec adipiscing tristique risus. Vitae semper quis lectus nulla at volutpat diam ut. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Cras pulvinar mattis nunc sed blandit. Risus pretium quam vulputate dignissim suspendisse in.</p>
+        <p className = "about-me-p"> I was born in Turkey and travelled across many countries and experienced variety of cultures. I’ve come to appreciate the positive impact of tech on peoples lives. Having experience in sales for over two years,  I’ve honed my interpersonal skills. My journey inspired me to pursue the world of tech to the next level. I started my Full-stack immersive program at DevMountain in March of 2019, and I’ve gained the skills to problem solve, learn in a fast-paced environment, and also build effective applications in tight deadlines. My passion is to create apps with functional design and effective code. Besides programming, I love to travel, play ping-pong, and to learn different programming languages. </p>
       </div>
       <div className = "about-right">
         <img className = "portfolio-pic" src={portfolio} />

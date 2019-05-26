@@ -42,14 +42,12 @@
         z-index: 1000;
 
     }
+   
 
-    #toggle{
-        display: none;
-    }
-    .navbar-unscrolled  label {
+    .navbar-unscrolled  #hamburger-icon {
         display: none; 
     }
-    .navbar-scrolled  label {
+    .navbar-scrolled  #hamburger-icon {
         display: none; 
     }
 
@@ -168,23 +166,25 @@
         
     }
 
-    #toggle{
-        display: none;
-    }
-    .navbar-unscrolled  label {
+    
+    .navbar-unscrolled  #hamburger-icon {
         display: block; 
         font-size: 30px;
         margin-right: 5vw;
+        outline: none;
+        border: none;
     }
-    .navbar-scrolled  label {
+    .navbar-scrolled  #hamburger-icon {
         display: block; 
         font-size: 30px;
         margin-right: 5vw;
+        outline: none;
+        border: none;
     }
 
 
-    #toggle:checked +  .navbar-session {
-        /* border: 2px solid red; */
+
+    .drop-down-menu-open + .navbar-session{
         position: absolute ;
         background-color: white;
         margin-top: 35vh;
@@ -196,15 +196,35 @@
         justify-content: space-around;
         align-items: center;
         animation: dropDown 1s;
-      
-       
-    }
+      }
 
     @keyframes dropDown {
         from {
           transform: translateX(-90vw)
         }
     }
+
+    .drop-down-menu-closed  + .navbar-session {
+        position: absolute ;
+        background-color: white;
+        margin-top: 35vh;
+        height: 60vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        animation: goAway .5s forwards;
+      }
+      
+      
+      @keyframes goAway {
+        to {
+          transform: translateX(-90vw)
+        }
+      }
+      
 
 }
 
@@ -279,23 +299,22 @@
         color:orange
     }
 
-    #toggle{
-        display: none;
-    }
-    .navbar-unscrolled  label {
+    .navbar-unscrolled  #hamburger-icon {
         display: block; 
         font-size: 20px;
         margin-right: 5vw;
+        outline: none;
+        border: none;
     }
-    .navbar-scrolled  label {
+    .navbar-scrolled  #hamburger-icon {
         display: block; 
         font-size: 20px;
         margin-right: 5vw;
+        outline: none;
+        border: none;
     }
 
-
-    #toggle:checked +  .navbar-session {
-        /* border: 2px solid red; */
+    .drop-down-menu-open + .navbar-session{
         position: absolute ;
         background-color: white;
         margin-top: 35vh;
@@ -307,15 +326,34 @@
         justify-content: space-around;
         align-items: center;
         animation: dropDown 1s;
-      
-       
-    }
+      }
 
     @keyframes dropDown {
         from {
-          transform: translateX(-90vw)
+          transform: translateX(-100vw)
         }
     }
+
+    .drop-down-menu-closed  + .navbar-session {
+        position: absolute ;
+        background-color: white;
+        margin-top: 35vh;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        animation: goAway .5s forwards;
+      }
+      
+      
+      @keyframes goAway {
+        to {
+          transform: translateX(-100vw)
+        }
+      }
 
 }
  
@@ -323,7 +361,7 @@
 
 
 /* /////////////////// Home.js BELOW //////////////////*/
-@media screen and (max-width: 450px){
+@media screen and (max-width: 650px){
     .home-section{
     
         background-image: url("./Images/home-page-ipad.png");
@@ -431,7 +469,7 @@
     } */
 }
 
-@media screen and (min-width: 451px) and (max-width: 1024px){
+@media screen and (min-width: 651px) and (max-width: 1250px){
     .home-section{
     
         background-image: url("./Images/home-page-ipad.png");
@@ -541,7 +579,7 @@
         
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1251px) {
     .home-section{
     
         background-image: url("./Images/home-page.jpg");
@@ -652,7 +690,7 @@
 /* /////////////////// Home.js ABOVE //////////////////*/
 
 /* /////////////////// About.js BELOW //////////////////*/
-@media screen and (max-width: 450px){
+@media screen and (max-width: 600px){
     .about-session{
         height: 100vh;
         background-color: #f4623a;
@@ -722,7 +760,7 @@
     
 }
 
-@media screen and (min-width: 451px) and (max-width: 1024px){
+@media screen and (min-width: 601px) and (max-width: 1024px){
     .about-session{
         height: 100vh;
         background-color: #f4623a;
@@ -1225,12 +1263,13 @@
         border-radius: 10px;
         background-color: rgba(211, 209, 209, 0.486);
         width: 30vw;
-        height: 5vh;
+        /* height: 5vh; */
         color:white;
         font-size: 0.5em;
         font-weight: 700;
         letter-spacing: 0.1em;
         cursor: pointer;
+        outline:none;
         
     }
     
@@ -1386,13 +1425,14 @@
         border: 2px solid rgb(57, 57, 59);
         border-radius: 10px;
         background-color: rgba(211, 209, 209, 0.486);
-        width: 15vw;
-        height: 8vh;
+        /* width: 15vw; */
+        /* height: 8vh; */
         color:white;
         font-size: 1em;
         font-weight: 800;
         letter-spacing: 0.1em;
         cursor: pointer;
+        outline: none;
         
     }
     
@@ -1548,14 +1588,16 @@
         border-radius: 10px;
         background-color: rgba(211, 209, 209, 0.486);
         width: 12vw;
-        height: 5vh;
+        /* height: 5vh; */
         color:white;
         font-size: 1em;
         font-weight: 800;
         letter-spacing: 0.1em;
         cursor: pointer;
+        outline: none;
         
     }
+
     
     .contact-infos img{
         width: 50px;
