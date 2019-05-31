@@ -1022,7 +1022,7 @@
 
 @media screen and (min-width: 451px) and (max-width: 1024px){
     .projects-section{
-        /* height: 100vh; */
+        height: 100vh;
         background-color: whitesmoke;
         border: 1px solid black; 
         display: flex;
@@ -1113,7 +1113,7 @@
 
 @media screen and (max-width: 450px) {
     .projects-section{
-        /* height: 100vh; */
+        height: 100vh;
         background-color: whitesmoke;
         border: 1px solid black; 
         display: flex;

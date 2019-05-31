@@ -14,8 +14,8 @@ function About() {
       <div className = "about-right">
         <img className = "portfolio-pic" src={portfolio} />
         <div className="contact-icons" >
-          <a href ="https://www.linkedin.com/in/fethi-efe-akcay/" target = "_blank"><img className = "github-pic" src = {github} /></a>
-          <a href = "https://github.com/FethiEfe" target = "_blank" ><img className = "linkedin-pic" src = {linkedin} /></a>
+          <a href = "https://github.com/FethiEfe" target = "_blank"><img className = "github-pic" src = {github} /></a>
+          <a href = "https://www.linkedin.com/in/fethi-efe-akcay/" target = "_blank" ><img className = "linkedin-pic" src = {linkedin} /></a>
           <a href = "mailto:f.akcay1@gmail.com" ><img className = "email-pic" src = {email} /></a>
           
         </div>
