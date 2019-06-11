@@ -976,12 +976,15 @@
     
     .exp-parag{
         /* border: 1px solid red; */
+        height: 10vh;
         width: 28vw;
         margin-top: 1vh;
         text-align: center;
         font-weight: 400;
         letter-spacing: 0.1em;
         font-size: 1em;
+        display: flex;
+        align-items: center;
     }
     
     .project-but{
@@ -1045,7 +1048,7 @@
     .all-Projects-Card{
         /* border: 1px solid blue; */
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
@@ -1071,6 +1074,7 @@
     .exp-parag{
         /* border: 1px solid red; */
         width: 28vw;
+        /* height: 8vh; */
         margin-top: 1vh;
         text-align: center;
         font-weight: 400;
