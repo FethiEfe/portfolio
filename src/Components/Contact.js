@@ -56,7 +56,7 @@ class Contact extends React.Component {
           <div className="contact-infos">
             <div className="contact-home-icon">
               <img src={home} />
-              <p>Dallas, TX</p>
+              <p style={{marginBottom:"0px", color:"black"}}>Somerville, NJ</p>
             </div>
 
             <div className="contact-linkedin-icon">
@@ -80,7 +80,7 @@ class Contact extends React.Component {
 
             <div className="contact-phone-icon">
               <img src={phone} />
-              <p>+1 210 602 7033</p>
+              <p style={{marginBottom:"0px",color:"black"}}>+1 210 602 7033</p>
             </div>
           </div>
         </div>
